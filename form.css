@@ -1,0 +1,102 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: rgb(15, 15, 100);
+}
+nav .navbar-header{
+    padding: 20px;
+
+}
+nav .nav-menu{
+    padding: 10px;   
+}
+nav .nav-menu ul{
+    width: 50%;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+nav .nav-menu ul li{
+    list-style: none;
+    
+}
+nav .nav-menu ul li a{
+    color: rgb(15, 15, 100);
+    text-decoration: none;
+    padding: 8px;
+    background-color: azure;
+    border-radius: 5px;
+}
+nav .navbar-header a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+nav .navbar-nav {
+    display: flex;
+    justify-content: flex-start;
+}
+.container{
+    background-image: url("https://r-xx.bstatic.com/xdata/images/xphoto/2880x868/279346280.jpeg?k=1f5ef835475595e138026356cdf0664eafb17cc2fc5aa9d09d90407d7ca866a1&o=");
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+    
+}
+.container .content{
+    color: aliceblue;
+    justify-content: flex-start;
+    font-size: large;
+    margin-left: 5%;
+}
+.container h1,h2{
+    padding: 10px;
+    padding-top: 50px;color: aliceblue;
+}
+
+.container form{
+    background-color:rgb(15, 15, 100) ;
+    text-align: center;
+    width: 45%;
+    position: absolute;
+    left: 28%;
+   bottom: 3%;
+    
+}
+.container form .div2{
+   color: aliceblue;
+}
+.container form .div2 button{
+    margin-bottom: 20px;
+}
+.container form1{
+    background-color:rgb(15, 15, 100) ;
+    text-align: center;
+    width: 45%;
+    position: absolute;
+    left: 28%;
+   top: 35%;
+   color: aliceblue;
+   padding-bottom: 20px;
+}
+.container form .elements input,button{
+    padding: 10px;
+}
+.container form .elements .form-group{
+    color: aliceblue;
+    padding: 10px;
+}
+.container form .elements .form-group a{
+    color: darkgoldenrod;
+}
+
+a1 {
+    color: green;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>hotel booking</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="form.css">
+</head>
+<script>
+  function validate() {
+    console.log("entered")
+    var name = document.getElementById("name1").value;
+    var name1 = document.getElementById("name2").value;
+    var password = document.getElementById("pass1").value;
+    var password1 = document.getElementById("pass2").value;
+
+    var Email = document.getElementById("email").value;
+
+    var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    if (name1 == null || name1 == "") {
+      alert("Name can't be blank");
+    }
+    else if (password.length < 6) {
+      alert("Password must be at least 6 characters long.");
+    }
+    else if (password1.length < 6) {
+      alert("Password must be at least 6 characters long.");
+    }
+    // else if(password2.length<6)
+    // {  
+    //     alert("Password must be at least 6 characters long.");  
+    // }
+    else if (Email.length == "") {
+      alert("enter email");
+      return false;
+    }
+    else if (!(Email.match(mailformat))) {
+      alert("invalid email")
+    }
+    else if (!(document.getElementById("agree").checked == true)) {
+
+      alert("Please  accept the Terms and Conditions");
+    }
+    else if (password != password1) {
+      alert("please enter the same password");
+    }
+    else {
+      alert("Form submited succesfully")
+    }
+  }
+  function myFunction() {
+    var x = document.getElementById("pass1");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+  function myFunction1() {
+    var y = document.getElementById("pass2");
+    if (y.type === "password") {
+      y.type = "text";
+    } else {
+      y.type = "password";
+    }
+  }
+function alertmessage(){
+  alert("YOU ARE REGISTERED!");
+}
+
+</script>
+
+<body>
+  <nav class="navbar">
+    <div class="">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Book your hotel</a>
+      </div>
+      <div class="nav-menu">
+        <ul class="navbar-nav">
+          <li class="active"><a href="home.html">Home</a></li>
+          <li><a href="admin.html">Admin</a></li>
+          <li><a href="regist.html">Register</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+        <div class="container">
+          <form name="myform" method="post" action="" onsubmit="validate()">
+            <div class="div2">
+              <h2>REGISTER</h2><br>
+
+              <input type="text" placeholder="First Name" class="name" id="name1" required><br><br>
+              <input type="text" placeholder="Last Name" class="name" id="name2" required><br><br>
+              <input type="text" placeholder="Email" class="name" id="mail" required><br><br>
+              <input type="password" placeholder="Password" class="name" id="pass1"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number
+                 and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+              <input type="checkbox" onclick="myFunction()">Show Password <br><br>
+              <input type="password" placeholder="Comfirm password"name="pass" class="name" id="pass2"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and 
+                one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+              <input type="checkbox" onclick="myFunction1()">Show Password <br><br>
+              <input type="checkbox" id="agree" required> accept the terms <a1>terms of use</a1> &
+              <a1>privacy policy</a1><br><br>
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
