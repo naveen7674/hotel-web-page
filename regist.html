@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>hotel booking</title>
   <meta charset="utf-8">
@@ -67,9 +68,9 @@
       y.type = "password";
     }
   }
-function alertmessage(){
-  alert("YOU ARE REGISTERED!");
-}
+  function alertmessage() {
+    alert("YOU ARE REGISTERED!");
+  }
 
 </script>
 
@@ -81,7 +82,7 @@ function alertmessage(){
       </div>
       <div class="nav-menu">
         <ul class="navbar-nav">
-          <li class="active"><a href="home.html">Home</a></li>
+          <li class="active"><a href="index.html">Home</a></li>
           <li><a href="admin.html">Admin</a></li>
           <li><a href="regist.html">Register</a></li>
         </ul>
@@ -89,32 +90,32 @@ function alertmessage(){
     </div>
   </nav>
 
-        <div class="container">
-          <form name="myform" method="post" action="" onsubmit="validate()">
-            <div class="div2">
-              <h2>REGISTER</h2><br>
+  <div class="container">
+    <form class="myform" method="post" action="" onsubmit="validate()">
+      <div class="div2">
+        <h2>REGISTER</h2><br>
 
-              <input type="text" placeholder="First Name" class="name" id="name1" required><br><br>
-              <input type="text" placeholder="Last Name" class="name" id="name2" required><br><br>
-              <input type="text" placeholder="Email" class="name" id="mail" required><br><br>
-              <input type="password" placeholder="Password" class="name" id="pass1"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number
+        <input type="text" placeholder="First Name" class="name" id="name1" required><br><br>
+        <input type="text" placeholder="Last Name" class="name" id="name2" required><br><br>
+        <input type="text" placeholder="Email" class="name" id="mail" required><br><br>
+        <input type="password" placeholder="Password" class="name" id="pass1"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number
                  and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
-              <input type="checkbox" onclick="myFunction()">Show Password <br><br>
-              <input type="password" placeholder="Comfirm password"name="pass" class="name" id="pass2"
-                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and 
+        <input type="checkbox" onclick="myFunction()">Show Password <br><br>
+        <input type="password" placeholder="Comfirm password" name="pass" class="name" id="pass2"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and 
                 one uppercase and lowercase letter, and at least 8 or more characters" required><br>
-              <input type="checkbox" onclick="myFunction1()">Show Password <br><br>
-              <input type="checkbox" id="agree" required> accept the terms <a1>terms of use</a1> &
-              <a1>privacy policy</a1><br><br>
-              <button>Submit</button>
-            </div>
-          </form>
-        </div>
+        <input type="checkbox" onclick="myFunction1()">Show Password <br><br>
+        <input type="checkbox" id="agree" required> accept the terms <a1>terms of use</a1> &
+        <a1>privacy policy</a1><br><br>
+        <button>Submit</button>
+      </div>
+    </form>
+  </div>
 
 
-        </form>
-    </div>
+  </form>
+  </div>
 
 </body>
 

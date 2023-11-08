@@ -3,7 +3,9 @@
     margin: 0%;
     box-sizing: border-box;
 }
-
+body{
+    flex-wrap: wrap;
+}
 nav {
     background-color: rgb(15, 15, 100);
 }
@@ -89,6 +91,9 @@ nav .navbar-nav {
 .container form .elements input,button{
     padding: 10px;
 }
+input{
+    padding: 10px;
+}
 .container form .elements .form-group{
     color: aliceblue;
     padding: 10px;
@@ -96,7 +101,14 @@ nav .navbar-nav {
 .container form .elements .form-group a{
     color: darkgoldenrod;
 }
-
+.container .myform{
+    position: absolute;
+    top: 0px;
+    padding-top: 0%;
+}
+.container .myform .div2 h2{
+    padding-top: 0%;
+}
 a1 {
     color: green;
 }
